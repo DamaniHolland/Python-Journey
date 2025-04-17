@@ -217,3 +217,41 @@ print(country_capitals1 == country_capitals2)
 print(country_capitals1 == country_capitals3)
 
 print(country_capitals1 != country_capitals2)
+
+# 6.2.6 Example: Dictionary of Student Grades
+
+'''
+The script below represents an instructor's grade book as a dictionary that 
+maps each student's name (a string) to a list of integers containing that 
+student's grades on three exams.
+'''
+
+# Usng a dictionary to represent an instructor's grade book
+grade_book = {
+    'Susan': [92, 85, 100],
+    'Eduardo': [83, 95, 79],
+    'Azizi': [91, 89, 82],
+    'Pantia': [97, 91, 92]
+}
+
+# Creating a total and count to accumulate
+all_grades_total = 0
+all_grades_count = 0
+
+# for each iteration unpack dictionary to variables 'name' for keys and 'grades' for values
+for name, grades in grade_book.items():
+    
+    # accumulates integers in grades for find total sum and assign it to variable 'total'
+    total = sum(grades)
+    
+    # Print format to display name and average grade for single person
+    print(f'Averages for {name} is {total/len(grades):.2f}')
+    
+    # accumulates total and adds it to global total
+    all_grades_total += total
+    
+    # accumulates length of grades and adds to global count of grades
+    all_grades_count += len(grades)
+
+# print format average for whole class    
+print(f"Class's Average is: {all_grades_total / all_grades_count:.2f}")
