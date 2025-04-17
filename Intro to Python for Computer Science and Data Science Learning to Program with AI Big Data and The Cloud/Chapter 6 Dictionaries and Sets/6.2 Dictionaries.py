@@ -1,0 +1,219 @@
+###############################################################################
+#   Damani Holland
+#   4/12/2025
+#   CS Python 121
+###############################################################################
+
+# 6.2.1 Creating a Dictionary
+
+'''
+Dictionary Syntax:
+
+   dictionary = {'key': 'value'}
+'''
+
+# 6.2 Exercise 3
+
+states = {'California': 'CA', 'Nevada':'NV', 'Texas':'TX'}
+
+print(states)
+
+# 6.2.2 Iterating through a dicionay
+
+'''
+iteration syntax:
+
+    for 'key', 'value' in dictionary_var.items():
+        expression
+'''
+days_per_month = {'January': 31, 'February': 28, 'March': 31}
+
+print(days_per_month)
+
+for month, days in days_per_month.items():
+    print(f'{month} has {days} days')
+    
+# 6.2.3 Basic Dictionary Operations
+
+roman_numerals = {'I': 1, 'II': 2, 'III': 3, 'V': 5, 'X': 100}
+
+print(roman_numerals)
+
+'''
+Accessing The Value Associated with a Key
+
+    - dictionary['key']
+        [out]: 'Value'
+'''
+
+print(roman_numerals['X'])
+
+'''
+Updating the Value of an Eisting Key-Value Pair
+
+    - dictionary['existing_key'] = new 'value'
+'''
+
+roman_numerals['X'] = 10
+
+print(roman_numerals)
+
+'''
+Adding a New Key-Value Pair
+
+    - dictionary_var['new key'] = 'new value'
+'''
+
+roman_numerals['L'] = 50
+
+print(roman_numerals)
+
+'''
+Removing a Key-Value Pair
+-You can delete a key-value pair from a dictionary with del statement
+    - del dictionary_var['existing_key']
+
+- You can remove a key-value pair with the dictionary method '.pop()'
+   Which returns the value for the removed key:
+    - dictionary_var.pop('existing_key')
+'''
+
+del roman_numerals['III']
+
+print(roman_numerals)
+
+print(roman_numerals.pop('X'))
+
+'''
+Attempting to Access a Nonexistent Key
+
+    -dictionary_var.get('nonexistent_key', 'message if not found')
+'''
+
+print(roman_numerals.get('III', 'III not in dictionary'))
+
+print(roman_numerals['V'])
+
+'''
+Testing whether a Dictionary Contains a specified Key
+
+    - 'key' in dictionary_var
+'''
+
+print('V' in roman_numerals)
+
+print('III' in roman_numerals)
+
+print('III' not in roman_numerals)
+
+# 6.2 Exercise 3
+
+'''
+String dictionary keys are case sensitive. Confirm this by using the
+following dictionary and assigning 10 to the key 'x'—doing so adds a new key–value pair
+rather than correcting the value for the key 'X':
+'''
+roman_numerals = {'I': 1, 'II': 2, 'III': 3, 'V': 5, 'X': 100}
+
+print(roman_numerals)
+roman_numerals['x'] = 10
+print(roman_numerals)
+
+# 6.2.4 Dictionary Methods keys and values
+
+months = {'January': 1, 'February': 2, 'March': 3}
+
+'''
+Iterating through keys and values
+
+To iterate through keys use '.keys()'
+    - for key_var in dictionary.keys():
+        expression  
+
+To iterate through values use '.values()'
+    - for value_var in dictionary.vaue():
+        expression
+'''
+
+for month_name in months.keys():
+    print(month_name, end='    ')
+    
+for month_number in months.values():
+    print(month_number, end='   ')
+    
+# Dictionary Views
+
+'''
+Dictionary methods items, keys and values each return a view of a dictrionary's
+data. meaning even if you assign the method .keys() to a variable it doesn't 
+create a new copy. It instead let's you view the orginal data set
+
+'''
+
+months_view = months.keys() # assigns keys pulled from months to months_view as a view
+
+for key in months_view: # iterate through view of months keys
+    print(key, end='    ')
+    
+months['December'] = 12 # updates original dictionary with new key-value pair
+
+print(months)
+
+for key in months_view: # variable assigned to months keys is updated as well
+    print(key, end='    ')
+    
+# Converting Dictionary Keys, Values and Key-Value Pairs to Lists
+
+'''
+list(dictionary.key_values())
+returns a view of key values from dictionary months
+'''
+print('\n', list(months.keys()))
+
+print('\n', list(months.values()))
+
+print('\n', list(months.items()))
+
+# Processing Keys in Sorted Order
+
+for month_name in sorted(months.keys()):
+    print(month_name, end='   ')
+    
+# 6.2.4 Exercise 3
+
+'''
+For the following dictionary, create lists of its keys, values and items
+and show those lists.
+roman_numerals = {'I': 1, 'II': 2, 'III': 3, 'V': 5}
+'''
+
+roman_numerals = {'I': 1, 'II': 2, 'III': 3, 'V': 5}
+
+print(list(roman_numerals.keys()))
+
+print('\n')
+
+print(list(roman_numerals.values()))
+
+print('\n')
+
+print(list(roman_numerals.items()))
+
+# 6.2.5 Dictionary Comparisons
+
+'''
+The comparisons operators == and != can be used to determine whether two 
+dictionaries have identical or different contens.
+'''
+
+country_capitals1 = {'Belgium': 'Brussels', 'Haiti': 'Port-au-Prince'}
+
+country_capitals2 = {'Nepal': 'Kathamandu', 'Uruguay': 'Montevideo'}
+
+country_capitals3 = {'Haiti': 'Port-au-Prince', 'Belgium': 'Brussels'}
+
+print(country_capitals1 == country_capitals2)
+
+print(country_capitals1 == country_capitals3)
+
+print(country_capitals1 != country_capitals2)
