@@ -255,3 +255,62 @@ for name, grades in grade_book.items():
 
 # print format average for whole class    
 print(f"Class's Average is: {all_grades_total / all_grades_count:.2f}")
+
+# 6.2.7 Example: Word Counts^2
+
+'''Tokenizing a string and counting unique words.'''
+
+text = ('this is a sample text with several words '
+        'this is more sample text with some different words')
+
+word_counts = {} # where we store unique words and their counts
+
+# count occurrences of each unique word
+'''
+line 272 tokenizes the string by calling it into the split method
+'''
+for word in text.split():
+    if word in word_counts:
+        word_counts[word] += 1 # update existing key-value pair
+    else:
+        word_counts[word] = 1 # insert new key-value pair
+
+print(f'{"WORD":<12}COUNT')
+
+for word, count in sorted(word_counts.items()):
+    print(f'{word:<12}{count}')
+    
+print('\nNumber of unique words:', len(word_counts))
+
+# Python Standard Library Module collections
+
+'''
+The module collections contains the type 'Counter', which recieves
+an iterable and summarizes its elements
+'''
+
+from collections import Counter
+
+counter = Counter(text.split())
+
+for word, count in sorted(counter.items()):
+    print(f'{word:<12}{count}')
+    
+print('Number of unique keys:', len((counter.keys())))
+
+# 6.2.7 Exercise 2
+
+'''
+Use a comprehension to create a list of 50 random integers in the
+range 1–5. Summarize them with a Counter. Display the results in two-column format.
+'''
+import random
+
+list = list([random.randrange(1, 6) for i in range(50)])
+
+print(list)
+
+numbers_counter = Counter(list)
+
+for number, count in sorted(numbers_counter.items()):
+    print(f'{number:<4}{count}')
