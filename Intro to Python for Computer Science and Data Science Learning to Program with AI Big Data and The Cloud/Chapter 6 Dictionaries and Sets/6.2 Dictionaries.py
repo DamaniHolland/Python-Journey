@@ -314,3 +314,25 @@ numbers_counter = Counter(list)
 
 for number, count in sorted(numbers_counter.items()):
     print(f'{number:<4}{count}')
+
+# 6.2.8 dictionary Method .update()
+
+'''
+.update() allows you to insert and update key-value pairs using inside a
+dictionary
+'''
+country_codes = {} # Creates and empty dictionary
+
+print('empty dictionary: country_codes =', country_codes)
+
+country_codes.update({'South Africa': 'za'}) # inserts into empty dictionary
+
+print('updated dictionary: country_codes =', country_codes)
+
+country_codes.update(Australia='ar') # inserts at the end of dictionary
+
+print('updated dictionary: country_codes =', country_codes )
+
+country_codes.update(Australia='au') # updates thevalue for 'Australia key
+
+print('revised dictionary: country_codes =', country_codes)
