@@ -333,6 +333,46 @@ country_codes.update(Australia='ar') # inserts at the end of dictionary
 
 print('updated dictionary: country_codes =', country_codes )
 
-country_codes.update(Australia='au') # updates thevalue for 'Australia key
+country_codes.update(Australia='au') # updates the value for 'Australia key
 
 print('revised dictionary: country_codes =', country_codes)
+
+# 6.2.9 Dictionary Comprehensions
+
+months = {'January': 1, 'February': 2, 'March': 3} # Creates a dictionary containing months
+
+'''
+Remove '#' to see different result
+'''
+# months = {'January': 1, 'February': 2, 'March': 2} 
+months2 = {number: name for name, number in months.items()} # Creates a dictionary comprehension with conditions
+
+print(months2)
+
+'''
+The expression 'number: name' specifies a key-value pair of the form 'key: value'
+'in months.items()' iterates through dictionary months, unpacking each key-value pair
+tuple into variables 'name' and 'number' using expression 'for name, number'
+The expression 'number: name' reverses the key and value, so the new dictionary
+maps the months numbers to the months names and the months names to the months
+numbers. Having duplicate values in the original dictionary causes the comprehension
+to update the key: value by inserting the new value to the existing key.
+'''
+grades = {'Sue': [98, 87, 94], 'Bob': [84, 95, 91]}
+print(grades)
+'''
+dictionary comprehension syntax:
+
+var = {new_key: new_value, for key_var, value_var in dictionary.items()}
+'''
+grades2 = {student: sum(grades) / len(grades) for student, grades in grades.items()}
+print(grades2)
+
+# Self Check 6.2.9 exercise 1
+
+'''
+Use a dictionary comprehension to create a dictionary
+of the numbers 1–5 mapped to their cubes:
+'''
+cubes = {num: num**3 for num in range(1, 6)}
+print(cubes)
