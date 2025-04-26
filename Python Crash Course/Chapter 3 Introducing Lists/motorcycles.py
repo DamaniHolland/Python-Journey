@@ -66,8 +66,8 @@ Removing an Item Using the .pop() method
 Syntax:
     - list_name.pop()
     
-removes the last item from the list
-is possible to assign to a variable
+removes the last item from the original list
+is possible to assign removed value to a variable
 
 Syntax:
     - var_name = list_name.pop()
@@ -79,4 +79,17 @@ print('original list:', motorcycles)
 popped_motorcycles = motorcycles.pop()
 print('popped list:', motorcycles)
 print('Value popped:', popped_motorcycles)
+
+'''
+Popping Items from any Position in a List
+
+Syntax:
+    - var_name = list_name.pop(index_to_remove)
+    
+removes value in list at listed index
+'''
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+first_owned = motorcycles.pop(0)
+print('The first motorcycle I owned was a ' + first_owned.title() + '.')
 
