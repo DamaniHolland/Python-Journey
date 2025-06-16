@@ -93,3 +93,28 @@ motorcycles = ['honda', 'yamaha', 'suzuki']
 first_owned = motorcycles.pop(0)
 print('The first motorcycle I owned was a ' + first_owned.title() + '.')
 
+'''
+Removing an Item by Value
+
+Syntax:
+    - list_name.remove('value_in_list')
+                      ('var_name_containing_value_in_list')
+'''
+
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print('Original list:', motorcycles)
+
+motorcycles.remove('ducati')
+print('deleted item (using .remove()):', motorcycles)
+
+'''
+.remove() can also recieve a value through a variable
+'''
+
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print('Original list:', motorcycles)
+
+too_expensive = 'ducati'
+motorcycles.remove(too_expensive)
+print('Removed item:', motorcycles)
+print('\nA ' + too_expensive.title() + ' is too expensive for me.')
