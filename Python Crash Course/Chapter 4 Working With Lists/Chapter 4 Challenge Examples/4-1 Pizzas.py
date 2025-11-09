@@ -19,3 +19,8 @@ about the kinds of pizza you like and then an additional sentence, such as
 I really love pizza!
 '''
 
+pizzas = ["pepperoni", "hawaiian", "meat lovers"]
+for pizza in pizzas:
+    print("large " + pizza + " pizza")
+    
+print("Pizza is my favorite food")
