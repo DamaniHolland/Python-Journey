@@ -39,4 +39,4 @@ print(magician.title() + ", that was a great trick!")
     Then adds the string element after the value to print
 '''
 
-    
+print("Thank you, everyone. That was a great magic show!")
