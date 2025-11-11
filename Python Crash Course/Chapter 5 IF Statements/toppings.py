@@ -18,7 +18,18 @@ Syntax:
   then it runs the next indented line of code underneath.
 '''
 
-requested_topping = 'mushroom'
+requested_topping = ['mushroom', 'onion', 'pineapple']
 
 if requested_topping != 'anchovies':
     print("Hold the anchovies!")
+    
+'''
+Checking whether a Value Is in a List
+
+Syntax:
+
+    - element in list_variable_name
+'''
+
+print('mushroom' in requested_topping)
+print('pepperoni' in requested_topping)
