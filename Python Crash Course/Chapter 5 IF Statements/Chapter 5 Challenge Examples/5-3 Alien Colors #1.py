@@ -16,3 +16,15 @@ a message that the player just earned 5 points .
 fails . (The version that fails will have no output .
 
 '''
+
+alien_color = 'green'
+
+if alien_color == 'green':
+    print("You have recieved 5 points!")
+    
+alien_color = 'red'
+
+if alien_color == 'green':
+    print("\nYou have recieved 5 points!")
+else:
+    print("\nSorry no points have been awarded!")
