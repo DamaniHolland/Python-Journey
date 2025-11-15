@@ -13,7 +13,7 @@ variable called alien_color and assign it a value of 'green', 'yellow', or 'red'
 a message that the player just earned 5 points .
 
 •  Write one version of this program that passes the if test and another that 
-fails . (The version that fails will have no output .
+fails . (The version that fails will have no output .)
 
 '''
 
@@ -26,5 +26,4 @@ alien_color = 'red'
 
 if alien_color == 'green':
     print("\nYou have recieved 5 points!")
-else:
-    print("\nSorry no points have been awarded!")
+    
