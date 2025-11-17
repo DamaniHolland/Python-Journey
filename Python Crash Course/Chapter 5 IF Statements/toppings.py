@@ -49,6 +49,7 @@ print("\nFinished making your pizza!")
 
 # Using if Statements with Lists
 
+# 11/16/25
 requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
 
 for requested_topping in requested_toppings:
@@ -67,3 +68,20 @@ if requested_toppings:
     print("\nFinished making your pizza!")
 else:
     print("Are you sure you want a plain pizza?")
+    
+# 11/17/2025
+
+# Using Multiple Lists
+
+available_toppings = ['mushrooms', 'olives', 'green peppers',
+                      'pepperoni', 'pineapple', 'extra cheese']
+
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print("\nAdding " + requested_topping + ".")
+    else:
+        print("Sorry, we don't have " + requested_topping + ".")
+        
+print("\nFinished making your pizza!")
