@@ -24,7 +24,13 @@ that the username is available .
 
 '''
 
-current_users = ['employee_1', 'employee_2', 'employee_3', 'employee_4', 'employee_5']
+current_users = ['Employee_1', 'employee_2', 'employee_3', 'employee_4', 'employee_5']
+
+for current_user in current_users:
+    index_of_current_user = current_users.index(current_user)
+    current_user = current_user.lower()
+    print("\n" + current_user)
+    current_users[index_of_current_user]
 
 new_users = ['employee_1', 'employee_2', 'employee_6', 'employee_7', 'employee_8']
 
