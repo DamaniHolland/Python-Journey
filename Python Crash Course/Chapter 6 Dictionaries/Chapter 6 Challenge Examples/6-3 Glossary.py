@@ -25,9 +25,11 @@ pair in your output
 glossary = {}
 
 glossary['lists'] = "A lists is a collection of items in a particular order. The list can include letters of the alphabet and/or digits 0-9."
-                    
-print(glossary['lists'])
 
+glossary['variables'] = 'Variables are containers for storing data values.'
 
+glossary['strings'] = 'A string is a sequence of characters, representing text.'
 
+glossary['for loop'] = 'a for loop is a control flow statement used for iteration, allowing a block of code to be executed repeatedly for each item in a sequence or other iterable object.'
 
+glossary['index'] = 'an index refers to the numerical position of an element within a sequence, such as a list, string, or tuple.'
