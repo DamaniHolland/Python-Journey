@@ -49,3 +49,28 @@ for name in favorite_languages.keys():
 
 if 'erin' not in favorite_languages.keys():
     print("Erin, please take our poll!")
+    
+# Looping Through a Dictionary's Keys in Order
+
+    # Create a 'for' loop 'temp_variable' 'in' sortded(dictionary_variable.keys())(method):
+        # print(temp_variable.title()(method) + "string statement")
+        
+for name in sorted(favorite_languages.keys()):
+    print(name.title() + ", Thank you for taking the poll!")
+    
+    # Print a string statement
+    # Create 'for' loop to iterate through all values in dictionary
+    # for every value in dictionary print temp_variable.title() method
+    
+print("The following languages have been mentioned:")
+for language in favorite_languages.values():
+    print(language.title())
+    
+    # When you wrap set() around a list that contains duplicate items, 
+    # Python identifies unique items in the list and builds a set from those items
+    # Creates a nonrepetitive list of languages that have been mentioned
+    # in the poll.
+    
+print("The following languages have been mentioned:")
+for language in set(favorite_languages.values()):
+    print(language.title())
