@@ -33,3 +33,9 @@ glossary['strings'] = 'A string is a sequence of characters, representing text.'
 glossary['for loop'] = 'a for loop is a control flow statement used for iteration, allowing a block of code to be executed repeatedly for each item in a sequence or other iterable object.'
 
 glossary['index'] = 'an index refers to the numerical position of an element within a sequence, such as a list, string, or tuple.'
+
+
+
+for term in glossary:
+    print(term + ": "  + glossary[term])
+    print("\n")
