@@ -70,3 +70,18 @@ print("New x-position: " + str(alien_0['x_position']))
 
 
 # Removing Key-Value Pairs
+
+'''
+
+Syntax:
+
+    - del dictionary_variable['keyword']
+    
+'''
+
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0)
+
+del alien_0['points']
+print(alien_0)
+
