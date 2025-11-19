@@ -19,14 +19,19 @@ user_0 = {
     'last': 'fermi',
 }
 
+    # Create a list[] assinged(=) to variable 'friends'
+        # list contains two items 'phil' and 'sarah
+friends = ['phil', 'sarah']
+
     # Created a for loop by using 'for',
     # Created two variables to hold key value pairs 'username: efermi'
     # named 'key' and ' value.
     # called dictionary variable name 'user_0' 
-    # Used .items() method, which returns a list of key-value pairs.
+    # Used .items() method, which returns a list of key-values as pairs.
     # Assinged for loop to every item in user_0 using 'in' method
 
 for key, value in user_0.items():
     print("\nKey: " + key)
     print("Value: " + value)
     
+    # Created a 'for' loop to find 
