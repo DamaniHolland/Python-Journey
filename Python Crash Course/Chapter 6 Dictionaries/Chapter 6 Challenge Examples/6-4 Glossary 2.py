@@ -1,6 +1,6 @@
 ###############################################################################
 #   Damani Holland
-#   11/18/2025
+#   11/21/2025
 #   CS Python
 ###############################################################################
 
@@ -39,7 +39,7 @@ glossary = {
     
     }
 
-sorted_glossary = sorted(glossary)
-for term in sorted_glossary:
-    print(term + ": "  + sorted_glossary[term])
+
+for term in glossary:
+    print(term + ": "  + glossary[term])
     print("\n") 
