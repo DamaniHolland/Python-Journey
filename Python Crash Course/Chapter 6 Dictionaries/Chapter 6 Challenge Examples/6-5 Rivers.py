@@ -16,7 +16,7 @@ through Egypt .
 •  Use a loop to print the name of each country included in the dictionary
 
 '''
-'''
+
 mississippi = {'name': 'mississippi river', 'location': 'mississippi', 
             'length': '3,902 miles'
             }
@@ -38,9 +38,9 @@ for river in rivers:
     print(river['name'].title() + ' located in ' + river['location'].title() + ".")
     print('name: ' + river['name'].title())
     print('location: ' + river['location'].title())
- '''   
+   
 
-
+'''
 rivers = {
     'mississippi': 'mississippi', 
     'egypt': 'nile',
@@ -58,3 +58,5 @@ for name in rivers.values():
     
 for location in rivers.keys():
     print('location: ' + location.title())
+    
+'''

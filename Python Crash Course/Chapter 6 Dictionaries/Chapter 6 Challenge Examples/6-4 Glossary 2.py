@@ -31,12 +31,13 @@ glossary = {
     '.sort()': '"A common function for arranging elements within a data '
                 'structure, typically an array or list, into a specific order."', 
     'dictionary': '"An unordered collection of dara values, used to store data '
-                    'in key:value pairs."', 
+                'in key:value pairs."', 
     '.items()': '"When called on a dictionary, returns a view object that displays '
                 'a list of key-value tuple pairs."', 
     '.lower()': '"Used to convert all lowercase equivalents. It returns a new '
-                'string unchaged because strings are immutable."'
-    
+                'string unchaged because strings are immutable."', 
+        'nesting': '"Storing a set of dictionaries in a list or a list of '
+                   'items as a value in a dictionary."'
     }
 
 
