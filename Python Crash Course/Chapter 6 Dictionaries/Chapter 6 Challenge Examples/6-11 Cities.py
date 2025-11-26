@@ -34,4 +34,3 @@ for city, information in cities.items():
             print("\t" + info_title + ": " + str(data) + ' sq. miles')
         else:
             print("\t" + info_title + ": " + str(data).title())
-        
