@@ -14,7 +14,7 @@ number = int(number)
     # if number divided by 2 returns a remainder of 0
         # print this number is  even
     # else number divided by 2 returns any number that is not zero
-        # print this number is odd
+        # print this number is odd 
 if number % 2 == 0:
     print("\n The number " + str(number) + " is even.")
 else:
