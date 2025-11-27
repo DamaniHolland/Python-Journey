@@ -8,6 +8,10 @@
 
 Write Clear Prompts
 
+    - You should include a clear, easy-to-follow prompt that tells the user
+      exactly what kind of information you're looking for. Any statement that 
+      tells the user what to enter should work.
+
 '''
 
     # store string inside promt variable
