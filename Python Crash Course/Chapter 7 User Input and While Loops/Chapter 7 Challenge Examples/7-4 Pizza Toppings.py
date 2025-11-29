@@ -12,14 +12,13 @@ print a message saying you’ll add that topping to their pizza
 '''
 active = True
 chosen_pizza_toppings = []
-while active == True:
+while active:
     what_pizza_toppings = 'What pizza toppings would you like to add: '
     what_pizza_toppings +=  "\nEnter 'quit' to quit program. "
     
     pizza_topping = input(what_pizza_toppings)
     
     if pizza_topping == 'quit':
-        break
+        active = False
     else:
         print(pizza_topping.title() + " will be added to your pizza.")
-        
