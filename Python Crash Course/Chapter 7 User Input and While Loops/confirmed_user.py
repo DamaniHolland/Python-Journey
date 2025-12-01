@@ -31,4 +31,3 @@ print("\nThe following users have been confirmed:")
 for confirmed_user in confirmed_users:
     print(confirmed_user.title())
     
-# Removing All Instances of Specific Vaues from a List
