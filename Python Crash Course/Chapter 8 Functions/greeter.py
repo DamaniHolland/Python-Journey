@@ -23,3 +23,13 @@ def greet_user():
     # call function by name 'greet_user'
     
 greet_user()
+
+# Passing Information to a Function
+
+    # Use 'def' to create function that takes an argument 'username'
+        # print string statement with 'username' argument
+def greet_user(username):
+    print("Hello, " + username.title() + "!")
+
+    # call function with string statement 'jesse' for the argument
+greet_user('jesse')
