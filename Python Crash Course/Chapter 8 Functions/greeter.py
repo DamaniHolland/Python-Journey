@@ -33,3 +33,18 @@ def greet_user(username):
 
     # call function with string statement 'jesse' for the argument
 greet_user('jesse')
+
+# Arguments and Parameters
+
+'''
+
+Argument:
+
+    - A oiece of information that is passed from a function call to a function.
+    
+
+Parameter:
+
+    - A piece of information the function needs to do its job.
+    
+'''
