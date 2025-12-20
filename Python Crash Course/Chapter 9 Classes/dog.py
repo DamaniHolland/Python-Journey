@@ -38,7 +38,8 @@ Syntax:
     - class_varialbe.attribute
 
 '''
-
+print("accessing attribute: " + my_dog.name)
+    
     # Calling Methods
 '''
 
