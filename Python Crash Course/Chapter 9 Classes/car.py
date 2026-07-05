@@ -51,7 +51,7 @@ print(my_new_car.get_descriptive_name())
 my_new_car.read_odometer()
 
     # Modifying Attribute Values
-    
+"""Change value of odometer_reading using 'assign' to change it directly"""
 my_new_car.odometer_reading = 23
 my_new_car.read_odometer()
 
@@ -101,4 +101,7 @@ my_used_car.update_odometer(23500)
 my_used_car.read_odometer()
 
 my_used_car.increment_odometer(100)
+my_used_car.read_odometer()
+
+my_used_car.update_odometer(2)
 my_used_car.read_odometer()
