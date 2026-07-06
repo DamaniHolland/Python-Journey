@@ -23,21 +23,37 @@ a personalized greeting to the user .Create several instances representing diffe
 users, and call both methods for each user .
 """
 
+'''
+9-5 Completed :P
+'''
+
 class User():
+    
+    # Methods
     
     def __init__(self, first_name, last_name, email):
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
-    
+        self.login_attempts = 0
     def describe_user(self):
         print("\nUser Information:")
         print(self.first_name)
         print(self.last_name)
         print(self.email)
+        print(str(self.login_attempts))
     
     def greet_user(self):
         print("\nHello! " + "Welcome " + self.first_name)
+
+    def increment_login_attempts(self):        
+        self.login_attempts += 1
+        return self.login_attempts
+    
+    def reset_login_attempts(self):
+        self.login_attempts = 0
+        return self.login_attempts
+# Calling methods
         
 user_One = User('damani', 'holland', 'damanirayholland@gmail.com')
 
@@ -53,3 +69,12 @@ user_Three = User('dawnly', 'sielle', 's.dawnly@gmail.com')
 
 user_Three.describe_user()
 user_Three.greet_user()
+
+user_One.increment_login_attempts()
+user_One.increment_login_attempts()
+user_One.increment_login_attempts()
+user_One.increment_login_attempts()
+user_One.describe_user()
+
+user_One.reset_login_attempts()
+user_One.describe_user()
