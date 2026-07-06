@@ -36,7 +36,7 @@ class Restaurant():
         """Initialize restaurant_name and cuisine_type attributes."""
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
-        
+        self.number_served = 0
     def describe_restaurant(self):
         print("\nResturant name: " + self.restaurant_name)
         print("Cuisine type: " + self.cuisine_type)
@@ -45,7 +45,25 @@ class Restaurant():
         print("\n--Congradulations!--")
         print(self.restaurant_name + " is now open and serving " + self.cuisine_type + " food.")
         
+    def set_number_served(self, customers_served):
+        if customers_served >= self.number_served:
+            self.number_served = customers_served
+        else:
+            print("You can't unserve customers.")
+        
+    def increment_number_served(self, total_customers):
+        self.number_served += total_customers
+        print(self.restaurant_name + " has now served " + str(self.number_served))
+        
 restaurant_One = Restaurant("pepe's pizzaria", "Italian")
 
 restaurant_One.open_restaurant()
+
 restaurant_One.describe_restaurant()
+
+print("This restaurant has served " + str(restaurant_One.number_served) + " people")
+
+restaurant_One.set_number_served(10)
+
+restaurant_One.increment_number_served(500)
+restaurant_One.set_number_served(499)
