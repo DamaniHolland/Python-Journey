@@ -21,4 +21,3 @@ of the user’s information . Make another method called greet_user() that print
 a personalized greeting to the user .Create several instances representing different 
 users, and call both methods for each user .
 '''
-
