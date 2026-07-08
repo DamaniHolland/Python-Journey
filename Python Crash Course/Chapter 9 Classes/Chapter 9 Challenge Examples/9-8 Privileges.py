@@ -6,16 +6,12 @@
 <<<<<<< HEAD
 
 '''
-=======
-'''
-'''
->>>>>>> 0dfa77be9768521a408d463994f6014697b3297b
 9-8. Privileges: Write a separate Privileges class . The class should have one 
 attribute, privileges, that stores a list of strings as described in Exercise 9-7 . 
 Move the show_privileges() method to this class . Make a Privileges instance 
 as an attribute in the Admin class . Create a new instance of Admin and use your 
 method to show its privileges
-<<<<<<< HEAD
+
 '''
 """
 9-7. Admin: An administrator is a special kind of user . Write a class called 
@@ -36,7 +32,7 @@ users, and call both methods for each user .
 '''
 =======
 
-'''
+
 class User():
     
     def __init__(self, first_name, last_name, username, email,):
