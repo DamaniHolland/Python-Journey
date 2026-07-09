@@ -11,8 +11,14 @@ rate file, make an Admin instance, and call show_privileges() to show that
 everything is working correctly.
 """
 
+"""
+9-12. Multiple Modules: Store the User class in one module, and store the 
+Privileges and Admin classes in a separate module . In a separate file, create 
+an Admin instance and call show_privileges() to show that everything is still 
+working correctly.
+"""
 
-from User_Module import Admin
+from Admin_Module import Admin
 
 user_One = Admin('nexus', 'drift', 'thenexusdrift@gmail.com', 3105842085, "March 25, 1998")
 
