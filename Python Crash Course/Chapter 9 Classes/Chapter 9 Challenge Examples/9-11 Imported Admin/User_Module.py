@@ -62,6 +62,6 @@ class Admin(User):
         
     def show_privileges(self):
         message = "Admin Privileges:"
-        message += "\n\t" + self.privileges
+        message += "\n\t" + str(self.privileges)
         
         print(message)
