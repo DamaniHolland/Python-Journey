@@ -1,36 +1,8 @@
 ###############################################################################
 #   Damani Holland
-#   7/7/2026
+#   7/9/2026
 #   CS Python
 ###############################################################################
-
-'''
-9-8. Privileges: Write a separate Privileges class . The class should have one 
-attribute, privileges, that stores a list of strings as described in Exercise 9-7 . 
-Move the show_privileges() method to this class . Make a Privileges instance 
-as an attribute in the Admin class . Create a new instance of Admin and use your 
-method to show its privileges
-
-'''
-"""
-9-7. Admin: An administrator is a special kind of user . Write a class called 
-Admin that inherits from the User class you wrote in Exercise 9-3 (page 166) 
-or Exercise 9-5 (page 171) . Add an attribute, privileges, that stores a list 
-of strings like "can add post", "can delete post", "can ban user", and so on . 
-Write a method called show_privileges() that lists the administrator’s set of 
-privileges . Create an instance of Admin, and call your method.
-"""
-
-'''
-9-3. Users: Make a class called User . Create two attributes called first_name 
-and last_name, and then create several other attributes that are typically stored 
-in a user profile . Make a method called describe_user() that prints a summary 
-of the user’s information . Make another method called greet_user() that prints 
-a personalized greeting to the user .Create several instances representing different 
-users, and call both methods for each user .
-'''
-
-
 class User():
     
     def __init__(self, first_name, last_name, email, phone_number, date_of_birth):
@@ -83,8 +55,13 @@ class Admin(User):
         self.privileges = Privileges()
     
     
-user_One = Admin('nexus', 'drift', "thenexusdrift@gmail.com", 3105480285, "March 25, 1998")
-
-user_One.greet_user()
-user_One.describe_user()
-user_One.privileges.show_privileges()
+    def __init__(self, first_name, last_name, email, phone_number, date_of_birth):
+        super(Admin, self).__init__(first_name, last_name, email, phone_number, date_of_birth)
+        
+        self.privileges = ["can add post", "can delete post", "can ban user"]
+        
+    def show_privileges(self):
+        message = "Admin Privileges:"
+        message += "\n\t" + self.privileges
+        
+        print(message)

@@ -4,8 +4,9 @@
 #   CS Python
 ###############################################################################
 
-from Restaurant_Module import Restaurant
 
+from Restaurant_Module import Restaurant
+"""Imports Restaurant_Module and all functions inside the module/class Restaurant."""
 
 restaurant_One = Restaurant('dominos', 'italian')
 
