@@ -57,8 +57,10 @@ glossary['for loop'] = ("a for loop is a control flow statement used for iterati
                         "item in a sequence or other iterable object.")
 glossary['index'] = ("an index refers to the numerical position of an element within " + 
                      "a sequence, such as a list, string, or tuple.")
-
-
+glossary['exceptions'] = ("special objects Python creates to manage errors that arise " +
+                          "while a program is running.")
+glossary['json module'] = ("allows yyou to save user data so it isn't lost when your " + 
+                           "program stops running.")
 for term in glossary:
     print(term.title() + ": " + glossary[term])
     print("\n")
