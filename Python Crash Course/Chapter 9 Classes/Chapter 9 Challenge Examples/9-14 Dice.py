@@ -23,11 +23,14 @@ from random import randint
 
 
 class Die():
+    """Meant to represent Die and how many rolls."""
     
     def __init__(self, sides = 6):
+        """Initializes the die"""
         self.sides = sides
     
     def roll_die(self, number_of_rolls):
+        """shows results of rolls"""
         self.number_of_rolls = number_of_rolls
         
         message = 'Roll results for ' + str(self.sides) + ' sided die'
