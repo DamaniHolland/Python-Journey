@@ -18,6 +18,9 @@ with open(file_name) as file_object:
         """Use 'for to work through each line in the file by looping over the 
             file object.
         """
-        print(line.rstrip()) # Using '.rstrip()'on each line in the print 
-                            # statement eliminates these extra blank lines
-                            
+        print(line.rstrip()) 
+        """print each line using '.rstrip'""" 
+        # Using '.rstrip()'on each line in the print                  
+        # statement eliminates these extra blank lines
+        
+# Making a list of lines from a file
