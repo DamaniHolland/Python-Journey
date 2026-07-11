@@ -61,6 +61,11 @@ glossary['exceptions'] = ("special objects Python creates to manage errors that 
                           "while a program is running.")
 glossary['json module'] = ("allows yyou to save user data so it isn't lost when your " + 
                            "program stops running.")
+glossary['file path'] = ("Tells python to look in a specific location on your system")
+glossary['relative path'] = ("Tells Python to look for a given location relative to the " +
+                             "directory where the currently running program file is stored.")
+glossary["absolute path"] = ("Tells Python exactly where the file is on your computer " +
+                             "regardless of where the program that's being executed is stored.")
 for term in glossary:
     print(term.title() + ": " + glossary[term])
     print("\n")
