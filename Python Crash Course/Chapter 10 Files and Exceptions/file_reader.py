@@ -15,7 +15,7 @@ with open(file_name) as file_object:
 # Reading Line by Line
 with open(file_name) as file_object:
     for line in file_object:
-        """Use 'for to work through each line in the file by looping over the 
+        """Use 'for' to work through each line in the file by looping over the 
             file object.
         """
         print(line.rstrip()) 
@@ -24,3 +24,13 @@ with open(file_name) as file_object:
         # statement eliminates these extra blank lines
         
 # Making a list of lines from a file
+
+with open(file_name) as file_object:
+    lines = file_object.readlines()
+    """The readlines method takes each line from the file and stores it in a list
+        This list is then stored in lines.
+    """
+for line in lines:
+    """We use a 'for' loop to print each line from list 'lines'
+    """
+    print(lines.rstrip())
