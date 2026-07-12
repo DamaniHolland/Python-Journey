@@ -34,3 +34,4 @@ for line in lines:
     """We use a 'for' loop to print each line from list 'lines'
     """
     print(lines.rstrip())
+    
